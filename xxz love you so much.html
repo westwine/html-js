@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+<font size='10'>
+do you want to change the photo????
+click on it if you want to change it!
+</font>
+</p>
+<script>
+function changeimage(){
+x=document.getElementById('change');
+if(x.src.match('http://i-7.vcimg.com/trim/2375277c2ee66e493e9c6e8f235288ba482318/trim.jpg')){
+x.src='http://www.gpxz.com/uploads/allimg/140219/0204355Q8_0.gif';
+x.width='1000';
+x.height='700';
+}
+}
+</script>
+
+<img id='change' onclick='changeimage()' src='http://i-7.vcimg.com/trim/2375277c2ee66e493e9c6e8f235288ba482318/trim.jpg'>
+</body>
+</html>

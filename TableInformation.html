@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证表单</title>
+
+    <style>
+        table {
+            width: 500px;
+            margin-left: 500px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<form method="POST" action="check.php" > 
+    <table>
+        <tr>
+            <td> 姓名：  </td>
+            <td><input type = "text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td> 年龄：  </td>
+            <td><input type = "text" id="age" name="age"></td>
+        </tr>
+        <tr>
+        	
+            <td>性别：  </td>
+            <td><input type = "radio"  name="sex" value="0">男
+                <input type = "radio" name="sex" value="1">女</td>
+        </tr>
+        <tr>
+            <td>Email：</td>
+            <td><input type = "text" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>专业：  </td>
+            <td><input name = "choose[]" type="checkbox" value="computer">计算机科学与技术
+                <input name = "choose[]" type="checkbox" value="communication">通信工程
+                <input name = "choose[]" type="checkbox" value="english">英语</td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="Submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+<script src="check.js"></script>  
+</body>
+</html>
